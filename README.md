@@ -8,7 +8,9 @@ The **Smart Conference Management Platform** is a system designed to streamline 
 
 ## Access the Live Website:
 
--![SCMP Banner](./SystemDesignDiagrams/Images/video.gif)
+![SCMP Banner](./SystemDesignDiagrams/Images/video.gif)
+
+
 -You can view the live website here: [Smart Conference Management Platform](https://bharathyadav2004.github.io/Smart-Conference-Management-Platform/)
 
 -You can access to GitHub here : [Smart Conference Management Platform GitHub repository](https://github.com/bharathyadav2004/Smart-Conference-Management-Platform)
@@ -45,7 +47,7 @@ The **Smart Conference Management Platform** is a system designed to streamline 
    - **Description**: Represents the static structure of the system, including classes, attributes, methods, and their relationships.
    - **Purpose**: Defines the core objects and their interconnections.
    - **Diagram**:  
-     ![Class Diagram](./SystemDesignDiagrams/ClssDiagram/ClassDiagram.jpg)
+     ![Class Diagram](./SystemDesignDiagrams/ClassDiagram/ClassDiagram.jpg)
 
 ---
 
