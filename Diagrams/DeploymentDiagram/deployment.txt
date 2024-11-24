@@ -1,0 +1,105 @@
+A deployment diagram in UML shows the physical deployment of software components across hardware nodes in a system. In this case, the Event Management System will be deployed on multiple servers and devices, representing the physical layout for managing the system’s operations.
+
+Deployment Nodes:
+
+Client Devices (User’s Device)
+Description: This node represents the devices used by different users (Admin, Organizer, Speaker, Participant) to access the system. These devices include desktops, laptops, or mobile devices.
+Responsibilities:
+Users interact with the system via the User Interface (UI).
+Send requests for registration, event management, feedback, etc.
+Web Server
+Description: This server hosts the web application and serves the UI to the user devices. It handles HTTP requests and serves content dynamically.
+
+
+Responsibilities:
+
+Hosts the User Interface (UI), including login, dashboards, and event pages.
+Communicates with backend services to process user actions.
+Deploys the Business Logic Layer to execute core functionality like event creation, session management, etc.
+
+
+Application Server
+Description: The application server hosts the core business logic components. It is responsible for executing server-side operations and connecting to the database.
+
+Responsibilities:
+Executes the Business Logic Layer, including modules like User Management, Event Management, Ticketing, and Notification.
+Coordinates interactions with the Database and External Services.
+Interfaces with Payment Gateway for processing payments.
+
+Database Server
+Description: A dedicated server hosting the database for persistent data storage. This server stores all event, user, ticket, feedback, and other system-related data.
+
+
+Responsibilities:
+Stores and retrieves data for users, events, sessions, tickets, feedback, etc.
+Manages database operations securely (e.g., backups, recovery).
+
+Payment Gateway Server
+Description: This server handles all payment processing. It is responsible for validating and processing participant ticket payments securely.
+
+Responsibilities:
+Interfaces with external payment processors (e.g., Stripe, PayPal) for ticket payment transactions.
+Handles payment confirmations and communicates the result back to the Application Server.
+
+
+Analytics & AI Server
+Description: A dedicated server for processing feedback and generating insights. It may run AI models for event analysis, user behavior prediction, and recommendation generation.
+
+Responsibilities:
+Analyzes collected Feedback data.
+Generates reports and recommendations via AI Analytics.
+Provides insights to the Organizer for event improvement.
+
+Translation Service Server
+Description: This server handles real-time translation services for sessions that require multi-language support.
+
+Responsibilities:
+Translates session content in real-time during events.
+Works in conjunction with Session Management for speaker content translation.
+
+Virtual Exhibit Booth Server
+Description: This server manages the virtual booth interactions for sponsors and participants. It handles the real-time content delivery for booths.
+
+Responsibilities:
+Manages the Virtual Exhibit Booth features for sponsors and participants.
+Facilitates real-time interactions and displays booth information.
+
+Deployment Relationships:
+Client Devices (User’s Device) ↔ Web Server:
+
+Users access the application hosted on the Web Server.
+Sends user input (login, registration, ticketing) to the Web Server.
+
+Web Server ↔ Application Server:
+
+The Web Server interacts with the Application Server to perform business logic operations (e.g., event creation, user registration, session management).
+The Web Server sends requests to the Application Server for user-related actions.
+
+Application Server ↔ Database Server:
+
+The Application Server interacts with the Database Server to store/retrieve user, event, session, and feedback data.
+
+Application Server ↔ Payment Gateway Server:
+
+The Payment Gateway Server processes payments during ticket generation and sends the payment confirmation back to the Application Server.
+
+Application Server ↔ Analytics & AI Server:
+
+After collecting feedback, the Application Server forwards the data to the Analytics & AI Server to generate insights and recommendations.
+Application Server ↔ Translation Service Server:
+
+The Application Server interfaces with the Translation Service Server to provide multi-language support for sessions and content.
+Application Server ↔ Virtual Exhibit Booth Server:
+
+The Application Server interacts with the Virtual Exhibit Booth Server to manage sponsor booths and interactions during events.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Deployment Diagram Summary:
+Client Devices: Access the web app via the Web Server.
+Web Server: Hosts the UI, connects to Application Server for business logic.
+Application Server: Coordinates interaction between components (UI, business logic, database, external services).
+Database Server: Stores and retrieves persistent data.
+Payment Gateway Server: Handles payment processing for ticket generation.
+Analytics & AI Server: Analyzes data and generates insights.
+Translation Service Server: Provides real-time translation for sessions.
+Virtual Exhibit Booth Server: Facilitates interactions with sponsor booths.

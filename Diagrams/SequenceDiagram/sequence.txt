@@ -1,0 +1,21 @@
+Sequence Diagram Breakdown:
+----------------------------------------------------------------------------------------------------
+Step	         Actor	                             Message Description
+----------------------------------------------------------------------------------------------------
+1	Participant → Web Server	          Opens registration page
+2	Web Server → Application Server	          Sends request for event data (getEventDetails())
+3	Application Server → Database Server	  Queries event data
+4	Database Server → Application Server	  Returns event details
+5	Web Server → Participant	          Displays event data
+6	Participant → Web Server	          Fills registration form and submits it
+7	Web Server → Application Server	          Sends registration data (registerParticipant())
+8	Application Server → Database Server	  Stores participant registration
+9	Application Server → Ticketing System	  Requests ticket generation (createTicket())
+10	Ticketing System → Application Server	  Returns ticketID
+11	Application Server → Payment Gateway	  Processes payment (processPayment())
+12	Payment Gateway → Application Server	  Confirms payment
+13	Application Server → Web Server	          Sends confirmation message
+14	Web Server → Participant	          Displays success message
+15	Application Server → Notification System  Sends registration confirmation
+16	Notification System → Participant	  Sends confirmation email/SMS
+------------------------------------------------------------------------------------------------------

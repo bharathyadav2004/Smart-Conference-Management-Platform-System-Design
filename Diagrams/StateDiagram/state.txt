@@ -1,0 +1,12 @@
+Statechart Diagram Breakdown:
+-----------------------------------------------------------------------------------------------
+State	                                   Transition Trigger	            Next State
+-----------------------------------------------------------------------------------------------
+Idle	                                User accesses event page	  Viewing Event Details
+Viewing Event Details	                Participant clicks 'Register'	  Registering for Event
+Registering for Event	                Payment required	          Payment Pending
+Payment Pending	Payment successful	Registration                       Confirmed
+Payment Pending	Payment failed	        Registration                          Failed
+Viewing Event Details 	                Invalid registration data	  Registration Failed
+Registering for Event	                Form validation failure	          Registration Failed
+------------------------------------------------------------------------------------------------

@@ -1,0 +1,167 @@
+Class Descriptions: 
+1. Class Name: User
+	Attributes:
+o	userID: Unique identifier for the user.
+o	name: Full name of the user.
+o	email: Contact email for the user.
+o	password: Password for account security.
+o	role: Role type (e.g., Admin, Organizer, Speaker, Participant).
+	Methods:
+o	login(): Authenticates user credentials.
+o	logout(): Logs the user out of the system.
+o	register(): Registers a new user.
+o	updateProfile(): Updates user's profile information.
+	Relationships:
+o	Inheritance: Acts as the base class for Admin, Organizer, Speaker, and Participant.
+2. Class Name: Admin
+	Attributes:
+o	manageUsers(): Manages user accounts within the system.
+o	viewAnalytics(): Views system analytics for performance insights.
+o	configureSystem(): Configures overall system settings.
+	Relationships:
+o	Inheritance: Inherits from User.
+3. Class Name: Organizer
+	Attributes:
+o	organizationName: Name of the organizer’s organization.
+	Methods:
+o	createEvent(): Creates a new event.
+o	manageEvent(): Manages event details, scheduling, etc.
+o	assignSpeakers(): Assigns speakers to sessions.
+o	customizeEventOptions(): Customizes event settings.
+	Relationships:
+o	Inheritance: Inherits from User.
+o	Association: Linked with the Event class for creating and managing events.
+4. Class Name: Participant
+	Attributes:
+o	preferences: Preferred topics or session types.
+	Methods:
+o	registerForEvent(): Registers for a specific event.
+o	viewAgenda(): Views event agenda.
+o	giveFeedback(): Provides feedback on sessions or events.
+o	networkWithOthers(): Connects and networks with other participants.
+	Relationships:
+o	Inheritance: Inherits from User.
+5. Class Name: Speaker
+	Attributes:
+o	biography: Background and expertise of the speaker.
+o	topics: Topics the speaker covers.
+	Methods:
+o	manageSessions(): Manages session details for the speaker.
+o	uploadMaterials(): Uploads presentation materials.
+	Relationships:
+o	Inheritance: Inherits from User.
+6. Class Name: Event
+	Attributes:
+o	eventID: Unique identifier for the event.
+o	name: Name of the event.
+o	description: Detailed description of the event.
+o	location: Venue or online link for the event.
+o	organizerID: ID of the organizer responsible.
+	Methods:
+o	scheduleSessions(): Schedules sessions within the event.
+o	openRegistration(): Opens event registration.
+o	closeRegistration(): Closes event registration.
+o	sendNotifications(): Sends notifications to participants.
+	Relationships:
+o	Association: Associated with Session, Ticket, and Feedback.
+
+7. Class Name: Session
+	Attributes:
+o	sessionID: Unique identifier for the session.
+o	title: Title of the session.
+o	description: Overview of session content.
+o	speakerID: ID of the speaker for this session.
+o	scheduledTime: Scheduled time for the session.
+	Methods:
+o	addSpeaker(): Assigns a speaker to the session.
+o	updateSchedule(): Updates session schedule.
+	Relationships:
+o	Association: Linked to Event and Speaker.
+8. Class Name: Ticket
+	Attributes:
+o	ticketID: Unique identifier for the ticket.
+o	eventID: ID of the associated event.
+o	participantID: ID of the participant.
+o	paymentStatus: Status of payment (e.g., paid, unpaid).
+	Methods:
+o	generateTicket(): Generates a ticket for the participant.
+o	processPayment(): Processes payment for the ticket.
+o	validateTicket(): Validates the ticket for entry.
+	Relationships:
+o	Association: Connected with Event and Payment Gateway.
+9. Class Name: Feedback
+	Attributes:
+o	feedbackID: Unique identifier for feedback.
+o	eventID: ID of the associated event.
+o	participantID: ID of the participant providing feedback.
+o	rating: Rating provided by the participant.
+o	comments: Additional comments from the participant.
+	Methods:
+o	submitFeedback(): Allows participant to submit feedback.
+o	analyzeFeedback(): Analyzes feedback for insights.
+	Relationships:
+o	Association: Linked with Event and Participant.
+10. Class Name: Payment Gateway
+	Attributes:
+o	gatewayID: Unique identifier for the payment gateway.
+o	gatewayName: Name of the payment gateway provider.
+o	transactionDetails: Details of the transaction.
+	Methods:
+o	processTransaction(): Processes the payment transaction.
+o	validateTransaction(): Validates the transaction status.
+	Relationships:
+o	Association: Connected with Ticket.
+11. Class Name: AI Analytics
+	Attributes:
+o	analyticsID: Unique identifier for the analytics report.
+o	eventID: ID of the event analyzed.
+o	insights: Insights generated from analytics.
+	Methods:
+o	generateReport(): Generates analytics report for the event.
+o	provideRecommendations(): Provides recommendations based on analysis.
+	Relationships:
+o	Dependency: Depends on feedback data from Feedback.
+12. Class Name: Virtual Exhibit Booth
+	Attributes:
+o	boothID: Unique identifier for the booth.
+o	eventID: ID of the event where the booth is set up.
+o	sponsorName: Name of the sponsor for the booth.
+o	boothDetails: Information about the booth.
+	Methods:
+o	interactWithParticipants(): Allows interaction with booth visitors.
+o	displayInformation(): Displays booth information to participants.
+	Relationships:
+o	Association: Associated with Event.
+13. Class Name: Translation Service
+	Attributes:
+o	serviceID: Unique identifier for the translation service.
+o	languagePair: Pair of languages for translation.
+o	translationData: Data for real-time translation.
+	Methods:
+o	translateText(): Translates static text.
+o	provideRealTimeTranslation(): Provides real-time translation during sessions.
+	Relationships:
+o	Dependency: Depends on Session for translation services.
+14. Class Name: Notification
+	Attributes:
+o	notificationID: Unique identifier for the notification.
+o	userID: ID of the user receiving the notification.
+o	message: Message content of the notification.
+o	dateTime: Date and time of notification.
+	Methods:
+o	sendEmail(): Sends notification via email.
+o	sendSMS(): Sends notification via SMS.
+o	sendVoiceNotification(): Sends a voice notification.
+	Relationships:
+o	Association: Connected with User for sending notifications.
+15. Class Name: Database
+	Attributes:
+o	dbID: Unique identifier for the database.
+o	dbName: Name of the database.
+o	dbConnectionDetails: Connection details for database access.
+	Methods:
+o	storeData(): Stores data into the database.
+o	retrieveData(): Retrieves data from the database.
+o	secureData(): Ensures data security within the database.
+	Relationships:
+o	Association: Supports all classes that need data storage and retrieval.
