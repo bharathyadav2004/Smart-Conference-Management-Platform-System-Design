@@ -8,10 +8,10 @@ The **Smart Conference Management Platform** is a system designed to streamline 
 
 ## Access the Live Website:
 
-![SCMP Banner](./System Design Diagrams/Images/video.gif)
-You can view the live website here: [Smart Conference Management Platform](https://bharathyadav2004.github.io/Smart-Conference-Management-Platform/)
+-![SCMP Banner](./SystemDesignDiagrams/Images/video.gif)
+-You can view the live website here: [Smart Conference Management Platform](https://bharathyadav2004.github.io/Smart-Conference-Management-Platform/)
 
-You can access to GitHub here : [Smart Conference Management Platform GitHub repository](https://github.com/bharathyadav2004/Smart-Conference-Management-Platform)
+-You can access to GitHub here : [Smart Conference Management Platform GitHub repository](https://github.com/bharathyadav2004/Smart-Conference-Management-Platform)
 
 ## Features
 - **Event Creation and Scheduling**: Tools for organizers to create and manage events.
@@ -28,8 +28,7 @@ You can access to GitHub here : [Smart Conference Management Platform GitHub rep
    - **Description**: Visualizes the workflow of the conference management system, including key processes like registration, session allocation, and feedback collection.
    - **Purpose**: Demonstrates the flow of activities and decision points within the system.
    - **Diagram**:  
-    
-	![Activity Diagram](./System Design Diagrams/ActivityDiagram/ActivityDiagram.png)
+	![Activity Diagram](./SystemDesignDiagrams/ActivityDiagram/ActivityDiagram.png)
 	 
 
 ---
@@ -38,7 +37,7 @@ You can access to GitHub here : [Smart Conference Management Platform GitHub rep
    - **Description**: Illustrates the interactions between different actors (e.g., organizers, participants) and the system.
    - **Purpose**: Highlights the system's functionalities and the roles involved.
    - **Diagram**:  
-     ![Use Case Model](./System Design Diagrams/UseCaseDiagram/UseCaseDiagram.jpg)
+     ![Use Case Model](./SystemDesignDiagrams/UseCaseDiagram/UseCaseDiagram.jpg)
 
 ---
 
@@ -46,7 +45,7 @@ You can access to GitHub here : [Smart Conference Management Platform GitHub rep
    - **Description**: Represents the static structure of the system, including classes, attributes, methods, and their relationships.
    - **Purpose**: Defines the core objects and their interconnections.
    - **Diagram**:  
-     ![Class Diagram](./System Design Diagrams/ClssDiagram/ClassDiagram.jpg)
+     ![Class Diagram](./SystemDesignDiagrams/ClssDiagram/ClassDiagram.jpg)
 
 ---
 
@@ -54,8 +53,7 @@ You can access to GitHub here : [Smart Conference Management Platform GitHub rep
    - **Description**: Depicts how objects interact to perform a specific task or workflow.
    - **Purpose**: Provides a dynamic view of the system's object interactions.
    - **Diagram**:  
-     
-     ![Collaboration Diagram](./System Design Diagrams/CollaborationDiagram/CollaborationDiagram.png)
+     ![Collaboration Diagram](./SystemDesignDiagrams/CollaborationDiagram/CollaborationDiagram.png)
 
 ---
 
@@ -63,7 +61,7 @@ You can access to GitHub here : [Smart Conference Management Platform GitHub rep
    - **Description**: Demonstrates the physical deployment of artifacts (e.g., software components) on hardware nodes.
    - **Purpose**: Shows how the system will be implemented in a real-world environment.
    - **Diagram**:  
-     ![Deployment Diagram](./System Design Diagrams/DeploymentDiagram/DeploymentDiagram.png)
+     ![Deployment Diagram](./SystemDesignDiagrams/DeploymentDiagram/DeploymentDiagram.png)
 
 ---
 
@@ -71,7 +69,7 @@ You can access to GitHub here : [Smart Conference Management Platform GitHub rep
    - **Description**: Details the sequence of interactions between objects for specific functionalities, such as user registration or session creation.
    - **Purpose**: Provides a timeline-based view of system interactions.
    - **Diagram**:  
-     ![Sequence Diagram](./System Design Diagrams/SequenceDiagram/SequenceDiagram.png)
+     ![Sequence Diagram](./SystemDesignDiagrams/SequenceDiagram/SequenceDiagram.png)
 
 ---
 
@@ -79,7 +77,7 @@ You can access to GitHub here : [Smart Conference Management Platform GitHub rep
    - **Description**: Organizes processes and workflows into lanes to specify responsibilities across different roles or departments.
    - **Purpose**: Clarifies accountability and role-specific tasks.
    - **Diagram**:  
-     ![Swimlane Diagram](./System Design Diagrams/SwimlaneDiagram/SwimlaneDiagram.png)
+     ![Swimlane Diagram](./SystemDesignDiagrams/SwimlaneDiagram/SwimlaneDiagram.png)
 
 ---
 
@@ -87,7 +85,7 @@ You can access to GitHub here : [Smart Conference Management Platform GitHub rep
    - **Description**: Visualizes the structure of the system in terms of software components and their dependencies.
    - **Purpose**: Highlights the modularity of the system.
    - **Diagram**:  
-     ![Component Diagram](./System Design Diagrams/ComponentDiagram/ComponentDiagram.png)
+     ![Component Diagram](./SystemDesignDiagrams/ComponentDiagram/ComponentDiagram.png)
 
 ---
 
@@ -95,14 +93,14 @@ You can access to GitHub here : [Smart Conference Management Platform GitHub rep
    - **Description**: Captures the states and transitions within the system, such as the lifecycle of a participant or a session.
    - **Purpose**: Explains the behavior of the system or its components in response to events.
    - **Diagram**:  
-     ![Statechart Diagram](./System Desig Diagrams/StateDiagram/StateChartDiagram.png)
+     ![Statechart Diagram](./SystemDesignDiagrams/StateDiagram/StateChartDiagram.png)
 
 ---
 
 ## Folder Structure
 -Smart-Conference-Management-Platform/
 -├── README.md
--├── System Design Diagrams/
+-├── SystemDesignDiagrams/
 -│   ├── UseCaseDiagram/
 -│   │   ├── use_case_diagram.png
 -│   │   └── descriptions.txt
