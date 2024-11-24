@@ -163,3 +163,4 @@ Prototype scripts for:
 4. **Upload to GitHub**: Push the structured repository to GitHub.
 
 Let me know if you need help implementing this structure!
+"# Smart-Conference-Management-Platform-System-Design" 
