@@ -164,3 +164,4 @@ Prototype scripts for:
 
 Let me know if you need help implementing this structure!
 "# Smart-Conference-Management-Platform-System-Design" 
+"# Smart-Conference-Management-Platform-System-Design-OOSE-" 
