@@ -7,10 +7,11 @@ This repository contains Object-Oriented Software Engineering (OOSE) models for 
 The **Smart Conference Management Platform** is a system designed to streamline the process of organizing and managing conferences. It includes features for event scheduling, participant registration, session tracking, and feedback collection.
 
 ## Access the Live Website:
-You can view the live website here: [Smart Conference Management Platform](https://bharathyadav2004.github.io/Smart-Conference-Management-Platform/)
-![SCMP Banner](./System Design Diagrams/Images/video.gif)
 
-You can access to GitHub here : [Smart COnference Management Platform GitHub repository](https://github.com/bharathyadav2004/Smart-Conference-Management-Platform)
+![SCMP Banner](./System Design Diagrams/Images/video.gif)
+You can view the live website here: [Smart Conference Management Platform](https://bharathyadav2004.github.io/Smart-Conference-Management-Platform/)
+
+You can access to GitHub here : [Smart Conference Management Platform GitHub repository](https://github.com/bharathyadav2004/Smart-Conference-Management-Platform)
 
 ## Features
 - **Event Creation and Scheduling**: Tools for organizers to create and manage events.

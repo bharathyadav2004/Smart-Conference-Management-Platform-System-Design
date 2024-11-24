@@ -1,0 +1,18 @@
+Activity Diagram Summary:
+
+Initial Activity: The Participant accesses the event registration page and views the event details.
+The Participant fills out the registration form and submits it for validation.
+The system validates the registration data and checks whether payment is required.
+If payment is required, the participant is redirected to the payment gateway, where payment is processed.
+After successful payment, a ticket is generated, and a confirmation notification is sent.
+The participant sees the registration success message, and the process ends.
+
+
+Activity Diagram Example Flow:
+
+The Participant begins by accessing the event registration page.
+After reviewing the details, the Participant fills out the registration form and submits it.
+The system then validates the registration to ensure everything is correct.
+If the payment is required, the Participant is redirected to the payment gateway, where they complete the payment process.
+The system checks if the payment was successful. If it was, the Ticket is generated, and a confirmation is sent to the participant.
+Finally, the Registration Success is displayed, and the process ends.
